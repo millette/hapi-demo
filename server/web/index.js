@@ -44,22 +44,12 @@ exports.register = function (server, options, next) {
   server.route({
     method: 'GET',
     path: '/{languageCode}/',
-    handler: function (request, reply) {
-      const data = {
-        __: request.i18n.__,
-        items: list1.items,
-        items2: list2.items
-      }
-      reply.view('index', data)
-    }
-    /*
     handler: {
       view: {
         template: 'index',
         context: { items: list1.items, items2: list2.items }
       }
     }
-    */
   })
 
   server.route({
