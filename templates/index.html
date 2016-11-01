@@ -6,11 +6,20 @@
 </head>
 <body>
 <h1>Activate the plot device!</h1>
+<h2>Liste #1</h2>
 <ol>
-  <% data.items.forEach((item) => { %>
+  <% _(data.items).each((item) => { %>
   <li><%- item %></li>
   <% }) %>
 </ol>
+
+<h2>Liste #2</h2>
+<ol>
+  <% data.items2.forEach((item) => { %>
+  <li><%- item %></li>
+  <% }) %>
+</ol>
+
 <script src="/js/vendor/jquery.js"></script>
 <script src="/js/vendor/what-input.js"></script>
 <script src="/js/vendor/foundation.min.js"></script>

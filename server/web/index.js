@@ -2,6 +2,7 @@
 
 exports.register = function (server, options, next) {
   const list1 = require('../../data/list1.json')
+  const list2 = require('../../data/list2.json')
   const pages = [
     'abonnez-vous',
     'accueil',
@@ -46,7 +47,7 @@ exports.register = function (server, options, next) {
     handler: {
       view: {
         template: 'index',
-        context: list1
+        context: { items: list1.items, items2: list2.items }
       }
     }
   })
