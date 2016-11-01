@@ -1,5 +1,7 @@
 'use strict'
 
+const list1 = require('../../data/list1.json')
+
 exports.register = function (server, options, next) {
   server.views({
     engines: { html: require('lodash-vision') },
@@ -11,7 +13,12 @@ exports.register = function (server, options, next) {
   server.route({
     method: 'GET',
     path: '/',
-    handler: { view: 'index' }
+    handler: {
+      view: {
+        template: 'index',
+        context: list1
+      }
+    }
   })
 
   server.route({
