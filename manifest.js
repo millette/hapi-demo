@@ -24,26 +24,16 @@ const manifest = {
     labels: ['web']
   }],
   registrations: [
+    { plugin: 'inert' },
+    { plugin: 'vision' },
     {
-      plugin: 'inert'
-    },
-    {
-      plugin: 'vision'
-    },
-    {
-      plugin: {
-        register: './server/api/index'
-      },
-      options: {
-        routes: { prefix: '/api' }
-      }
+      plugin: './server/api/index',
+      options: { routes: { prefix: '/api' } }
     },
     {
       plugin: {
         register: './server/web/index',
-        options: {
-          templateCached: Config.get('/cache/web')
-        }
+        options: { templateCached: Config.get('/cache/web') }
       }
     }
   ]

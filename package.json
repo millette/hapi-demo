@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon server.js",
-    "test": "standard && lab -c",
+    "test": "npm run lintall && lab -c",
+    "jsonlint": "eslint --ext .json .",
+    "lintall": "standard && npm run jsonlint",
     "lint": "standard"
   },
   "author": "Robin Millette <robin@millette.info>",
@@ -25,8 +27,19 @@
   "devDependencies": {
     "code": "3.x.x",
     "eslint": "^3.9.1",
+    "eslint-plugin-json": "^1.2.0",
     "lab": "11.x.x",
     "nodemon": "1.x.x",
     "standard": "^8.5.0"
+  },
+  "eslintConfig": {
+    "plugins": [
+      "json"
+    ]
+  },
+  "standard": {
+    "ignore": [
+      "assets/js/vendor"
+    ]
   }
 }
