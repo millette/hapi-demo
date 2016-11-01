@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="fr" dir="ltr">
+
+<head>
+        <title>PhD Accueil</title>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/foundation.css">
+        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" href="css/foundation-icons.css" />
+        <link rel="stylesheet" href="css/machina.css">
+</head>
+
+<body>
+
+<!-- liens-publics -->
+<div class="row" id="liens-publics">
+        <div class="large-12 medium-12 small-12 columns">
+                <ul class="menu align-right">
+                <li><a href="bye">Me déconnecter</a></li>
+                <!-- visible if logged=false -->
+                <!-- <li><a href="abonnez-vous">M'abonner</a></li> -->
+                <!-- endif logged=false -->
+                <li><a href="moi">Moi</a></li> <!-- visible if logged=true -->
+                <li><a href="bottin" title="Membres et groupes de la communauté ">Bottin</a></li>
+                <li><a href="agenda" title="Agenda de la communauté ">Agenda</a></li>
+                <li><a href="faq" title="Foire aux questions ">FAQ</a></li>
+                <li><a href="apropos">À propos</a></li>
+                <li><a href="accueil">Accueil</a></li>
+                </ul>
+        </div>
+</div>
+
+<!-- logo + chercher + filtrer -->
+<div class="row align-middle">
+        <div class="large-6 medium-6 small-6 columns">
+                <a href="accueil"><img src="img/phdadmin_logo.png" alt="PhD Administration"></a>
+        </div>
+        <div class="large-6 medium-6 small-6 columns">
+                <br><form>
+        <div class="row">
+                  <div class="large-5 medium-5 small-5 columns">
+                     <input type="text" value="">
+                  </div>
+                  <div class="large-7 medium-7 small-7 columns">
+                  <a href="resultats" class="hollow button" title="Chercher parmi tous les articles ">Chercher</a>&nbsp;
+                  <!-- debut filtrer -->
+                                <button class="hollow button" type="button" data-toggle="filtrer-dropdown" title="Filtrer articles de cette page ">Filtrer</button>
+                                <div class="dropdown-pane" id="filtrer-dropdown" data-dropdown data-auto-focus="true">
+                                  <p><strong>Filtrer articles courants</strong></p>
+                                         <div class="row">
+                                                <div class="large-12 medium-12 small-12 columns">
+                                                  <label>par terme<input type="text" placeholder="Exemple"></label>
+                                                  <label>par date<input type="text" placeholder="2016-10-27"></label>
+                                                  <input class="button" type="submit" name="enregistrer" value="Filtrer articles">&nbsp;
+                                                  <input class="button" type="submit" name="Tout afficher" value="Afficher tous">
+                                                </div>
+                                         </div>
+                                </div>
+                        <!-- fin filtrer -->
+                        <!-- debut trier -->
+                                &nbsp;<button class="hollow button" type="button" data-toggle="trier-dropdown" title="Trier articles de cette page ">Trier</button>
+                                <div class="dropdown-pane" id="trier-dropdown" data-dropdown data-auto-focus="true">
+                                  <p><strong>Trier articles courants</strong></p>
+                                         <div class="row">
+                                                <div class="large-12 medium-12 small-12 columns">
+                                                <p><input type="radio" name="trierPar" value="ParPertinence" id="ParPertinence" checked><label for="ParPertinence">Par pertinence</label></p>
+                                                <p><input type="radio" name="trierPar" value="ParTitre" id="parTitre"><label for="parTitre">Par titre</label></p>
+                                                <p><input type="radio" name="trierPar" value="ParDate" id="parDate"><label for="parDate">Par date</label></p>
+                                                </div>
+                                         </div>
+                                </div>
+                        <!-- fin trier -->
+        </div>
+        </div>
+      </form>
+        </div>
+</div>
+
+<!-- breadcrumb -->
+<div class="row">
+        <div class="large-12 medium-12 small-12 columns">
+        <nav>
+                <ul class="breadcrumbs">
+                <li>Accueil</li>
+                <li>
+                        <a class="prev-page" href="#"><strong>&lt;</strong></a>
+                        <span> Page 1 </span>
+                        <a class="next-page" href="#"><strong>&gt;</strong></a>
+                </li>
+                </ul>
+        </nav>
+        </div>
+</div>
+
+<!-- title -->
+<div class="row" id="title-line">
+        <!-- LEFT -->
+  <div class="large-3 medium-3 small-3 columns" id="title-left">
+      <div class="text-center" id="bloc-langues">
+                        <a href="accueil"><span title="Français" class="alert badge">Fr</span>&nbsp;</a>
+                        <a href="langue/en/accueil"><span title="English" class="badge">En</span>&nbsp;</a>
+                        <a href="langue/es/accueil"><span title="Español" class="badge">Es</span>&nbsp;</a>
+                        <a href="langue/it/accueil"><span title="Italiano" class="badge">It</span>&nbsp;</a>
+                        <a href="langue/ru/accueil"><span title="Русский" class="badge">Ru</span>&nbsp;</a>
+                        <a href="langue/ar/accueil"><span title="العربية" class="badge">Ar</span>&nbsp;</a>
+      </div>
+  </div>
+  <!-- CENTER -->
+  <div class="large-6 medium-6 small-6 columns" id="title-center">
+                <h3 id="page-main-title" class="text-center">Accueil du journal</h3>
+  </div>
+  <!-- RIGHT -->
+  <div class="large-3 medium-3 small-3 columns" id="title-right">
+    <div class="" id="bloc-fonctions">
+                 <ul class="menu align-right">
+                        <li class="icon"><a title="Imprimer la page" href="#"><i class="fi-print"></a></i></li>
+                        <li class="icon"><a title="Partager sur Facebook" href="#"><i class="fi-social-facebook"></a></i></li>
+                        <li class="icon"><a title="Ajouter à mon agenda" href="moi#mon-agenda"><i class="fi-calendar"></a></i></li>
+        <li class="icon"><a title="S'abonner aux notifications" href="#"><i class="fi-rss"></a></i></li>
+        <li class="icon"><a title="Ajouter à mes favoris" href="#"><i class="fi-star"></a></i></li>
+                </ul>
+    </div>
+  </div>
+</div>
+
+<!-- INTERFACE -->
+
+<div class="row" id="grid">
+
+        <!-- LEFT -->
+
+  <div class="large-3 medium-3 small-3 columns" id="grid-left">
+
+        <!-- sections -->
+        <div class="">
+                <h5 class="text-center"><strong>Sections</strong></h5>
+                <div class="callout">
+      <ul class="menu vertical">
+                        <li><a href="en-construction">Académique</a></li>
+                        <li><a href="section-entreprise">Entreprise</a></li>
+                        <li><a href="en-construction">Quoi faire en ville</a></li>
+                        <li><a href="en-construction">Revue de presse</a></li>
+                        <li><a href="en-construction">Société</a></li>
+                        <li><a href="en-construction">Vie culturelle</a></li>
+                </ul>
+                </div>
+        </div>
+
+        <!-- sujets -->
+        <div class="">
+                <h5 class="text-center"><strong>Sujets</strong></h5>
+                <div class="callout">
+      <ul class="menu vertical">
+                        <li><a href="sujet-agriculture">Agriculture</a></li>
+                        <li><a href="en-construction">Architecture</a></li>
+                        <li><a href="en-construction">Art</a></li>
+                        <li><a href="en-construction">Droit</a></li>
+                        <li><a href="en-construction">Économie</a></li>
+                        <li><a href="en-construction">Finance</a></li>
+                        <li><a href="en-construction">Généralités</a></li>
+                        <li><a href="en-construction">Informatique</a></li>
+                        <li><a href="en-construction">Langage et linguistique</a></li>
+                        <li><a href="en-construction">Politique</a></li>
+                        <li><a href="en-construction">Sciences de la gestion</a></li>
+                        <li><a href="en-construction">Sciences de la santé</a></li>
+                        <li><a href="en-construction">Sciences de la terre</a></li>
+                        <li><a href="en-construction">Sciences de l'éducation</a></li>
+                        <li><a href="en-construction">Sc. de l'environnement</a></li>
+                        <li><a href="en-construction">Sc. de l'information et de la communication</a></li>
+                        <li><a href="en-construction">Sciences des matériaux</a></li>
+                        <li><a href="en-construction">Sciences économiques</a></li>
+                        <li><a href="en-construction">Sciences exactes</a></li>
+                        <li><a href="en-construction">Sciences humaines</a></li>
+                        <li><a href="en-construction">Sciences sociales</a></li>
+                        <li><a href="en-construction">Sport</a></li>
+                        <li><a href="en-construction">Urbanisme</a></li>
+                        <li><a href="#<en-construction">Zoologie</a></li>
+                </ul>
+                </div>
+        </div>
+  </div>
+
+  <!-- CENTER -->
+
+  <div class="large-6 medium-6 small-6 columns" id="grid-center">
+    <div>
+
+                <br>
+
+                <div class="media-object" id="article 1">
+                  <h4 class="headline"><a target="_blank" href="page-int-1" title="Exemple d'un article interne">Mission SOCLIM – Carnet de bord #2</a></h4>
+                  <div class="media-object-section">
+                         <div class="float-left">
+                                <img title="© Julien Boulanger" src="http://www.cite-sciences.fr/fileadmin/_processed_/csm_KERGUELEN-tempete-2_24df1f8d69.jpg" width="200" height="300">
+                         </div>
+                  </div>
+                  <div class="media-object-section">
+                        <p class="text-justify">Le Marion Dufresne vient de rejoindre les îles Kerguelen. Suite de l'expédition <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="SOUTHERN OCEAN AND CLIMATE FIELD STUDIES WITH INNOVATIVE TOOLS">SOCLIM</span> dans l'océan Austral. Nous avons atteint depuis peu la région de Kerguelen, dans les Cinquantièmes hurlants...</p>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="" id="article 2">
+                        <div>
+                                 <table><tr>
+                                 <td>
+                                        <h4 class="headline"><a target="_blank" href="page-ext-1" title="Exemple d'un article externe">Determinants of Local<br>Governments' Transparency</a></h4>
+                                        <blockquote class="text-justify"><em>The crisis has impact on Local Government<br>forcing it to be more transparent<br>in management of public resources.</em></blockquote>
+                                </td>
+                                <td><img src="img/dans-articles/Philippe_Couillard.jpg" width="100" height="100" title="Philippe Couillard"></td>
+                                </tr></table>
+                        </div>
+                        <div class="content"><p class="text-justify">This article examines theoretically and empirically the determinants of the levels of transparency in Local Governments based on the agency and legitimacy theories. For the purpose of this study, the analysis is based on the Spanish municipalities over a period of 4 years...</p></div>
+                </div>
+
+                <hr>
+
+                <div class="" id="article 3">
+                        <div>
+                                <table><tr>
+                                 <td>
+                                        <h4 class="headline"><a target="_blank" href="http://aas.sagepub.com/cgi/content/abstract/0095399715607287v1?rss=1">The Corrupted Industry</a></h4>
+                                        <h5 class="headline"><a target="_blank" href="http://aas.sagepub.com/cgi/content/abstract/0095399715607287v1?rss=1">the <em>Wagon-Wheel Effect</em></a></h5>
+                                </td>
+                                <td><img src="img/dans-articles/wagonwheel.jpg" width="100" height="100" title="image de Google Images"></td>
+                                </tr></table>
+                        </div>
+                        <div class="content">
+                                <p class="text-justify"><img src="img/dans-articles/lettrine.gif" width="30" height="30" alt="N" title="lettrine">ote that the present study addresses a topic neglected by the public administration literature: government corruption and its effects on public service systems. Specifically, the study focuses on the institutionalized form of government corruption and offers a framework to explain... </p>
+                        </div>
+                </div>
+
+                <hr>
+
+                <div class="" id="article 4">
+                        <div><h4 class="headline"><a target="_blank" href="http://fr.reuters.com/article/sportsNews/idFRMT1IDAT00004SU20151114">L'Argentine et le Brésil se neutralisent</a></h4></div>
+                        <div class="content"><p class="text-justify">Les deux géants du continent sud-américain se sont neutralisés à Buenos Aires lors de la troisième journée des qualifications pour la Coupe du Monde 2018 en Russie. C'est le Parisien Ezequiel Lavezzi qui ouvrait le score pour l'Argentine, idéalement servi par Gonzalo Higuain (1-0, 33e).</p></div>
+                </div>
+
+                <hr>
+
+                <div class="" id="article 5">
+                        <div><h4 class="headline text-right"><a target="_blank" href="http://fr.reuters.com/article/sportsNews/idFRMT1IDAT00004SU20151114"><span>رفضت المعارضة الفنزويلية</span></a></h4></div>
+                        <div class="content"><p class="text-right">س، 31 أكتوبر/تشرين الأول (راديو هافانا كوبا) : رفضت المعارضة الفنزويلية العرض الذي تقدم به الرئيس نيكولاس مادورو بالمشاركة في حوار وطني بعد الانتخابات التشريعية التي ستجري في السادس من ديسمبر/كانون الأول.
+         </p></div>
+                </div>
+
+                <hr>
+
+    </div>
+  </div>
+
+  <!-- RIGHT -->
+
+  <div class="large-3 medium-3 small-3 columns" id="grid-right">
+    <div class="">
+      <h5 class="text-center"><strong>En bref</strong></h5>
+
+      <div class="secondary callout" id="breve-1">
+                        <div class="breve-titre"><p><b><a target="_blank" href="http://fr.reuters.com/article/sportsNews/idFRMT1IDAT00004SU20151114">Funeste rivalité</a></b></p></div>
+                        <div class="breve-contenu"><p>Qui oserait douter un instant que pluralisme, liberté d'expression et l'emploi des journalistes soient l'unique objectif.</p></div>
+                </div>
+
+      <div class="secondary callout" id="breve-2">
+                        <div class="breve-titre"><p><b><a target="_blank" href="http://fr.reuters.com/article/sportsNews/idFRMT1IDAT00004SU20151114">Mythologie républicaine</a></b></p></div>
+                        <div class="breve-contenu"><p>Duel entre les candidats socialiste et frontiste lors du deuxième tour de la législative partielle du Doubs, le 8 fév. dernier, s'est conclu par l'échec du Front national?</p></div>
+                </div>
+
+      <div class="secondary callout" id="breve-4">
+                        <div class="breve-titre"><p><b><a target="_blank" href="https://en.wikipedia.org/wiki/Republican_Front_%28France%29">Front républicain</a></b></p></div>
+                        <div class="breve-contenu">
+                                <p>On ne peut donc parler d'une tradition historique de front républicain.</p>
+                                <p>Il existe dans l'histoire politique française une coutume établie, bien qu'elle n'ait pas toujours été respectée et que les modalités de sa mise en œuvre aient varié en fonction des modes de scrutin.</p>
+                        </div>
+                </div>
+
+      <div class="secondary callout" id="breve-5">
+                        <div class="breve-titre"><p><b><a target="_blank" href="http://aas.sagepub.com/cgi/content/abstract/0095399715602733v1?rss=1">Risks and Benefits...</a></b></p></div>
+                        <div class="breve-contenu"><p>Although some studies highlight the risks to fiscal discipline, others regard legislative scrutiny as essential for fiscal transparency...</p></div>
+                </div>
+
+    </div>
+  </div>
+</div>
+
+<!--    FOOTER -->
+<div class="row small-collapse medium-collapse large-collapse" id="footer">
+        <!-- collapses whitespace between cols of grid -->
+  <div class="large-4 medium-4 small-4 columns">
+    <div class="" id="copyright">
+      <p class="text-left"><em>© 2016 - Machina Mundi Multimedia Inc.</em></p>
+    </div>
+  </div>
+  <div class="large-4 medium-4 small-4 columns">
+    <div class="" id="pagination">
+                        <!-- pagination -->
+                        <ul class="pagination text-center" role="navigation" aria-label="Pagination">
+                        <li class="pagination-previous"><strong><a href="#" aria-label="Previous page"></a></strong></li>
+                        <li class="current">1</li>
+                        <li><a href="#" aria-label="Page 2">2</a></li>
+                        <li><a href="#" aria-label="Page 3">3</a></li>
+                        <li><a href="#" aria-label="Page 4">4</a></li>
+                        <li><a href="#" aria-label="Page 5">5</a></li>
+                        <li class="ellipsis"></li>
+                        <li><a href="#" aria-label="Page 1000">1 000 000</a></li>
+                        <li class="pagination-next"><strong><a href="#" aria-label="Next page"></a></strong></li>
+                        </ul>
+    </div>
+  </div>
+  <div class="large-4 medium-4 small-4 columns">
+    <div class="" id="mise-a-jour">
+      <p class="text-right"><em>Dernière mise à jour: 2016-10-27 à 08:47.</em></p>
+    </div>
+  </div>
+</div>
+
+<!--    SCRIPTS -->
+<script src="js/vendor/jquery.js"></script>
+<script src="js/vendor/what-input.js"></script>
+<script src="js/vendor/foundation.min.js"></script>
+<script>
+        $(document).foundation();
+</script>
+
+</body>
+</html>

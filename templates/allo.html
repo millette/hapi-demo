@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+        <title>PhD Me-connecter</title>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/foundation.css">
+        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" href="css/foundation-icons.css" />
+        <link rel="stylesheet" href="css/machina.css">
+</head>
+
+<body>
+
+<!-- liens-publics -->
+<div class="row" id="liens-publics">
+        <div class="large-12 medium-12 small-12 columns">
+                <ul class="menu align-right">
+                <li><a href="allo">Me connecter</a></li>
+                <li><a href="abonnez-vous">M'abonner</a></li>
+                <li><a href="bottin">Bottin</a></li>
+                <li><a href="agenda">Agenda</a></li>
+                <li><a href="faq">FAQ</a></li>
+                <li><a href="apropos">À propos</a></li>
+                <li><a href="accueil">Accueil</a></li>
+                </ul>
+        </div>
+</div>
+
+<!-- logo + chercher -->
+<div class="row">
+        <form>
+        <div class="large-6 medium-6 small-6 columns">
+                <a href="accueil"><img src="img/phdadmin_logo.png" alt="PhD Administration"></a>
+        </div>
+        <div class="large-1 medium-1 small-1 columns">&nbsp;</div>
+        <div class="large-3 medium-3 small-3 columns"><br><input type="text" value=""></div>
+        <div class="large-2 medium-2 small-2 columns">
+                <br><a href="resultats" class="hollow button" title="Chercher parmi tous les articles ">Chercher</a>
+        </div>
+        </form>
+</div>
+
+<!-- title -->
+<div class="row" id="title line">
+  <div class="large-12 medium-12 small-12 columns">
+    <div class="callout">
+      <h3 id="page-main-title" class="text-center">Me connecter</h3>
+    </div>
+  </div>
+</div>
+
+<!-- INTERFACE -->
+
+<!-- start form -->
+<div class="row" id="authenticate">
+
+  <div class="large-6 medium-6 small-6 columns">
+    <div class="callout">
+                <form>
+      <label><strong>Utilisateur</strong> <input type="text" name="username"></label>
+      <label><strong>Mot-de-passe</strong> <input type="text" name="password"></label>
+      <p>
+                        <input class="button" type="submit" name="meConnecter" value="Me connecter">
+                        &nbsp; <strong>ou</strong>, si je ne suis pas membre, <a href="abonnez-vous"><span class="larger-text">m'abonner</span></a>
+                </p>
+                </form>
+    </div>
+  </div>
+
+  <div class="large-6 medium-6 small-6 columns">
+    <div class="callout">
+      <p class="text-left"><a href="new-password"><span class="larger-text">Avez-vous oublié votre mot-de-passe ?</span></a></p>
+      <p class="text-justify">Soyez sans crainte. Nous vous posterons une clef temporaire, qui vous permettra de changer votre mot-de-passe.</p>
+      <p class="text-left"><a href="certificat"><span class="larger-text">Utiliser un certificat pour vous connecter ?</span></a></p>
+      <p class="text-justify">Avec ce certificat, sans frais, il ne sera pas nécessaire de taper <em>Utilisateur</em>, ni le <em>Mot-de-passe</em>. Explication de comment obtenir et exploiter ce certificat.</p>
+    </div>
+  </div>
+
+</div>
+<!-- end form -->
+
+<!-- 4 column grid row -->
+<div class="row" id="grid">
+        <!-- COL1 -->
+  <div class="large-3 medium-3 small-3 columns" id="col-1">
+                <div class="secondary callout">
+                        <a href="agenda#du-nouveau"><h5>Du nouveau</h5></a>
+                        <p>Ce site met l'accent sur la participation de ses lecteurs.<br><a href="agenda#du-nouveau">En savoir plus ...</a></p>
+      </div>
+  </div>
+  <!-- COL2 -->
+  <div class="large-3 medium-3 small-3 columns" id="col-2">
+                <div class="secondary callout">
+                        <a href="agenda#du-nouveau"><h5>Du nouveau</h5></a>
+                        <p>Ce site met l'accent sur la participation de ses lecteurs.<br><a href="agenda#du-nouveau">En savoir plus ...</a></p>
+      </div>
+  </div>
+  <!-- COL3 -->
+  <div class="large-3 medium-3 small-3 columns" id="col-3">
+                <div class="secondary callout">
+                        <a href="agenda#du-nouveau"><h5>Du nouveau</h5></a>
+                        <p>Ce site met l'accent sur la participation de ses lecteurs.<br><a href="agenda#du-nouveau">En savoir plus ...</a></p>
+      </div>
+  </div>
+  <!-- COL4 -->
+  <div class="large-3 medium-3 small-3 columns" id="col-4">
+                <div class="secondary callout">
+                        <a href="agenda#du-nouveau"><h5>Du nouveau</h5></a>
+                        <p>Ce site met l'accent sur la participation de ses lecteurs.<br><a href="agenda#du-nouveau">En savoir plus ...</a></p>
+      </div>
+  </div>
+</div>
+<!-- 4 column grid row -->
+
+<!--    SCRIPTS -->
+<script src="js/vendor/jquery.js"></script>
+<script src="js/vendor/what-input.js"></script>
+<script src="js/vendor/foundation.min.js"></script>
+<script>
+        $(document).foundation();
+</script>
+
+</body>
+</html>

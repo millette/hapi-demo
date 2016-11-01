@@ -1,0 +1,756 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>PhD Moi</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/foundation.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/foundation-icons.css" />
+  <link rel="stylesheet" href="css/machina.css">
+</head>
+
+<body>
+
+<!-- liens-publics -->
+<div class="row" id="liens-publics">
+  <div class="large-12 medium-12 small-12 columns">
+    <ul class="menu align-right">
+    <li><a href="bye">Me déconnecter</a></li>
+    <li><a href="moi">Moi</a></li>
+    <li><a href="bottin">Bottin</a></li>
+    <li><a href="agenda">Agenda</a></li>
+    <li><a href="faq">FAQ</a></li>
+    <li><a href="apropos">À propos</a></li>
+    <li><a href="accueil">Accueil</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- logo + chercher -->
+<div class="row">
+  <form>
+  <div class="large-6 medium-6 small-6 columns">
+    <a href="accueil"><img src="img/phdadmin_logo.png" alt="PhD Administration"></a>
+  </div>
+  <div class="large-1 medium-1 small-1 columns">&nbsp;</div>
+  <div class="large-3 medium-3 small-3 columns"><br><input type="text" value=""></div>
+  <div class="large-2 medium-2 small-2 columns">
+    <br><a href="resultats" class="hollow button" title="Chercher parmi tous les articles ">Chercher</a>
+  </div>
+  </form>
+</div>
+
+<!-- title -->
+<div class="row" id="title line">
+  <div class="large-12 medium-12 small-12 columns">
+    <div class="callout">
+      <h3 id="page-main-title" class="text-center">Moi</h3>
+    </div>
+  </div>
+</div>
+
+<div class="row" id="grid">
+
+  <!-- LEFT -->
+  <div class="large-3 medium-3 small-3 columns" id="grid-left">
+  <!--  tabulations -->
+  <ul class="tabs vertical" data-tabs id="compte">
+    <li class="tabs-title is-active"><a href="#etat-compte" aria-selected="true"><span class="larger-text">État de compte</span></a></li>
+    <li class="tabs-title"><a href="#identification"><span class="larger-text">Identification</span></a></li>
+    <li class="tabs-title"><a href="#preferences"><span class="larger-text">Préférences</span></a></li>
+    <li class="tabs-title"><a href="#sujets"><span class="larger-text">Sujets de recherche</span></a></li>
+    <li class="tabs-title"><a href="#favoris"><span class="larger-text">Favoris</span></a></li>
+    <li class="tabs-title"><a href="#notifications"><span class="larger-text">Notifications</span></a></li>
+    <li class="tabs-title"><a href="#participation"><span class="larger-text">Participation</span></a></li>
+    <li class="tabs-title"><a href="#pairs"><span class="larger-text">Pairs</span></a></li>
+    <li class="tabs-title"><a href="#groupes"><span class="larger-text">Groupes</span></a></li>
+    <li class="tabs-title"><a href="#mon-agenda"><span class="larger-text">Agenda</span></a></li>
+    <li class="tabs-title"><a href="#mon-calendrier"><span class="larger-text">Calendrier</span></a></li>
+    <li class="tabs-title"><a href="#meteos"><span class="larger-text">Météos</span></a></li>
+  </ul>
+  </div>
+
+  <!-- RIGHT -->
+
+  <div class="large-9 medium-9 small-9 columns" id="grid-right">
+  <div>
+
+  <form>
+  <div class="tabs-content" data-tabs-content="compte">
+    <div class="tabs-panel is-active" id="etat-compte">
+      <div class="" id="bloc-1">
+      <div><h4>État de compte</h4></div>
+      <div class="content">
+        <dl>
+        <dt>Type de compte</dt>
+        <dd><p>Platine</p></dd>
+        <dt>Coût mensuel</dt>
+        <dd><p>$100</p></dd>
+        <dt>Déduction en fonction de ma participation</dt>
+        <dd><p>$90</p></dd>
+        <dt>Total à payer</dt>
+        <dd><p>$10</p></dd>
+        <dt>Échéance</dt>
+        <dd><p>2016-11-01</p></dd>
+        <dt>Paiement</dt>
+        <dd>
+          <div class="row">
+          <fieldset class="large-12 columns">
+            <input type="radio" name="paiement" value="carte de crédit" id="carte"><label for="carte">Carte de crédit</label>
+            <input type="radio" name="paiement" value="paypal" id="paypal"><label for="paypal">Paypal</label>
+            <input type="radio" name="paiement" value="bitcoin" id="bitcoin"><label for="bitcoin">Bitcoin</label>
+            <input type="radio" name="paiement" value="autre" id="autre"><label for="autre">Autre ...</label>
+          </fieldset>
+          </div>
+        </dd>
+        <dt></dt>
+        <dd>
+          <div class="row">
+          <fieldset class="large-12 columns">
+            <p>
+            <input class="button" name="payer" value="Payer dès maintenant ...">
+            <span>&nbsp;</span>
+            <input class="button" type="submit" name="donate" value="Faire un don ...">
+            </p>
+          </fieldset>
+          </div>
+        </dd>
+        </dl>
+      </div>
+    </div>
+    </div>
+    </form>
+
+    <div class="tabs-panel" id="identification">
+    <div class="" id="bloc-2">
+      <div><h4>Identification</h4></div>
+      <form>
+      <div class="content">
+        <dl>
+        <dt>Nom de famille</dt>
+        <dd><p><input type="text" name="nomFamille" value="Farmer"></p></dd>
+        <dt>Prénom</dt>
+        <dd><p><input type="text" name="prenom" value="Alain"></p></dd>
+        <dt>Utilisateur</dt>
+        <dd><p><input type="text" name="username" value="alain"></p></dd>
+        <dt>Mot de passe</dt>
+        <dd><p><input type="text" name="password" value="************"></p></dd>
+        <dt>Courriel</dt>
+        <dd><p><input type="text" name="courriel" value="alain_farmer@yahoo.com"></p></dd>
+        <dt>Géolocalisation</dt>
+        <dd><p><input type="text" name="geolocalisation" value="Montréal"></p></dd>
+        </dl>
+        <p><input class="button" type="submit" name="enregistrer" value="Enregistrer"></p>
+      </div>
+      </form>
+    </div>
+    </div>
+
+    <div class="tabs-panel" id="preferences">
+    <div class="" id="bloc-3">
+      <div><h4>Préférences</h4></div>
+      <!-- photo -->
+      <div class="row" id="form-photo">
+        <div class="large-6 medium-6 small-6 columns">
+          <div class="">
+            <p><strong>Ma photo</strong></p>
+            <p>Photo qui accompagne mes contributions.</p>
+            <form>
+              <label for="fileUpload" class="button">Téléverser image ...</label>
+              <input type="file" id="fileUpload" class="show-for-sr">
+            </form>
+            <p class="text-center"><em>Veuillez téléverser une image d'une taille d'environ 200 pixels par 200 pixels.</em></p>
+          </div>
+        </div>
+        <div class="large-6 medium-6 small-6 columns">
+          <div class="">
+            <p class="text-center"><img src="img/membres/me.jpg" width="200" height="200" alt="Alain"></p>
+          </div>
+        </div>
+      </div>
+      <!-- informations -->
+      <div class="content">
+        <dl>
+        <dt>Langues <a class="icon" title="Ajouter une langue" href="#"><i class="fi-plus"></i></a></dt>
+        <dd><p>Français, Anglais</p></dd>
+        <dt>Lieux <a class="icon" title="Ajouter un lieu" href="#"><i class="fi-plus"></i></a></dt>
+        <dd><p>Montréal, Québec, Canada</p></dd>
+        <dt>Thème <a class="icon" title="Choisir un thème" href="#"><i class="fi-pencil"></i></a></dt>
+        <dd><p>Pas de thème particulier.</p></dd>
+        <dt>Traduire avec Google Translate</dt>
+        <dd>
+          <form>
+            <input type="radio" name="traduire" value="Non" id="Non"><label for="Non">Non</label>
+            <input type="radio" name="traduire" value="Oui" id="Oui" checked><label for="Oui">Oui</label>
+            <input type="checkbox" id="aviser" checked><label for="aviser">M'aviser lorsqu'il s'agit d'une traduction</label>
+          </form>
+        </dd>
+        </dl>
+      </div>
+      <!-- fin -->
+    </div>
+    </div>
+
+    <div class="tabs-panel" id="sujets">
+    <div class="" id="bloc-4">
+      <div><h4>Tous les sujets de recherche</h4></div>
+      <div class="content">
+        <ul>
+          <li>Afficher liste alphabétique de tous les sujets.<br></li>
+          <li>Choisir un sujet parmi cette liste alphabétique de tous les sujets.<br></li>
+        </ul>
+      </div>
+      <div><h4>Mes sujets de recherche</h4></div>
+      <div class="content">
+        <ul>
+          <li>Liste de mes sujets.<br></li>
+          <li>Consulter un de mes sujets.<br></li>
+          <li>Retirer un de mes sujets.<br></li>
+          <li>Ajouter un sujet, par autoComplete.<br></li>
+        </ul>
+      </div>
+      <p><a title="Haut de page" href="#"><i class="fi-arrow-up"></i></a></p>
+    </div>
+    </div>
+
+    <div class="tabs-panel" id="favoris">
+    <div class="" id="bloc-5">
+      <div><h4>Catégories de favoris</h4></div>
+      <div class="content">
+        <ul>
+          <li>Sections<br></li>
+          <li>Sujets<br></li>
+          <li>Personnes<br></li>
+          <li>Ressources<br></li>
+          <li>etc<br></li>
+        </ul>
+      </div>
+      <div><h4>Mes favoris</h4></div>
+      <div class="content">
+        <ul>
+          <li>Liste de mes favoris<br></li>
+          <li>Consulter un de mes favoris<br></li>
+          <li>Retirer un de mes favoris<br></li>
+        </ul>
+      </div>
+      <p><a title="Haut de page" href="#"><i class="fi-arrow-up"></i></a></p>
+    </div>
+    </div>
+
+    <div class="tabs-panel" id="notifications">
+    <div class="" id="bloc-6">
+      <div><h4>Notifications</h4></div>
+      <div class="content">
+        <p>Spécifier:</p>
+        <ul>
+          <li>Si notifications sont souhaitées<br></li>
+          <li>À quelle fréquence ?<br></li>
+          <li>Comment ?<br></li>
+          <li>Liste des ressources et termes concernées par les notifications<br></li>
+          <li>Cesser notifications d'une ressource ou d'un terme.<br></li>
+          <li>etc</li>
+        </ul>
+        <p><a title="Haut de page" href="#"><i class="fi-arrow-up"></i></a></p>
+      </div>
+    </div>
+    </div>
+
+    <div class="tabs-panel" id="participation">
+    <div class="" id="bloc-8">
+      <div><h4>Participation</h4></div>
+        <div class="content">
+        <dl>
+        <dt>État de mon profil</dt>
+        <dd>
+          <blockquote>Mon profil est complété à 50%.<br>Le compléter afin d'en retirer tous les bénéfices.</blockquote>
+        </dd>
+        <dt>Paramètres de ma participation</dt>
+        <dd>
+          <ul>
+          <li><a href="#">Notifications</a></li>
+          <li><a href="#">Sécurité</a></li>
+          <li><a href="#">Confidentialité</a></li>
+          <li><a href="#">Vie privée</a></li>
+          </ul>
+        </dd>
+        <dt>Historique de ma participation</dt>
+        <dd>
+          <ul>
+          <li><em>Participant depuis</em>: 2008-01-01</li>
+          <li><em>Dernière participation</em>: 2016-10-28 à 18h10.</li>
+          <li><em>Points cumulés</em>: 12 345 points</li>
+          <li><em>Réputation</em>: très fiable.</li>
+          </ul>
+        </dd>
+        </dl>
+        <p><a title="Haut de page" href="#"><i class="fi-arrow-up"></i></a></p>
+      </div>
+    </div>
+    </div>
+
+    <div class="tabs-panel" id="pairs">
+    <div class="" id="bloc-9">
+
+      <!-- Membres -->
+      <div class="content">
+        <h4>Membres</h4>
+        <ul>
+          <li><a href="bottin#membres"><em>Liste de tous les membres</em></a>, pour choisir des pairs.<br></li>
+          <li><em>Joindre un pair</em>, c'est-à-dire l'inviter à devenir un de mes pairs.<br></li>
+        </ul>
+      </div>
+
+      <!-- Pairs -->
+      <div><h4>Mes pairs</h4></div>
+
+      <!-- row-1 -->
+      <div class="row">
+        <form>
+        <div class="large-4 medium-4 small-4 columns">
+          <div class="text-center">
+            <h5>Alain Farmer</h5>
+            <a href="#"><img src="img/membres/me.jpg" width="200" height="200" alt="Pair #1"></a>
+              <!-- start nested row -->
+              <div class="row">
+                <div class="large-12 medium-12 small-12 columns">
+                  <div class="large-3 medium-3 small-3 columns">
+                    <a class="icon" title="Consulter son profil" href="#"><i class="fi-torso"></i></a>
+                  </div>
+                  <div class="large-3 medium-3 small-3 columns">
+                    <a class="icon" title="Contacter par courriel" href="#"><i class="fi-at-sign"></i></a>
+                  </div>
+                  <div class="large-3 medium-3 small-3 columns">
+                    <a class="icon" title="Permissions accordées" href="#"><i class="fi-lock"></i></a>
+                  </div>
+                  <div class="large-3 medium-3 small-3 columns">
+                    <a class="icon" title="Larguer ce pair" href="#"><i class="fi-unlink"></i></a>
+                  </div>
+                </div>
+              </div>
+              <!-- end nested row -->
+          </div>
+        </div>
+        <div class="large-4 medium-4 small-4 columns">
+          <div class="text-center">
+            <h5>Claude Berthiaume</h5>
+            <a href="#"><img src="img/membres/me.jpg" width="200" height="200" alt="Pair #2"></a>
+              <!-- start nested row -->
+              <div class="row">
+                <div class="large-12 medium-12 small-12 columns">
+                  <div class="large-3 medium-3 small-3 columns">
+                    <a class="icon" title="Consulter son profil" href="#"><i class="fi-torso"></i></a>
+                  </div>
+                  <div class="large-3 medium-3 small-3 columns">
+                    <a class="icon" title="Contacter par courriel" href="#"><i class="fi-at-sign"></i></a>
+                  </div>
+                  <div class="large-3 medium-3 small-3 columns">
+                    <a class="icon" title="Permissions accordées" href="#"><i class="fi-lock"></i></a>
+                  </div>
+                  <div class="large-3 medium-3 small-3 columns">
+                    <a class="icon" title="Larguer ce pair" href="#"><i class="fi-unlink"></i></a>
+                  </div>
+                </div>
+              </div>
+              <!-- end nested row -->
+          </div>
+        </div>
+        <div class="large-4 medium-4 small-4 columns">
+          <div class="text-center">
+            <h5>Robert Ducharme</h5>
+            <a href="#"><img src="img/membres/me.jpg" width="200" height="200" alt="Pair #3"></a>
+              <!-- start nested row -->
+              <div class="row">
+                <div class="large-12 medium-12 small-12 columns">
+                  <div class="large-3 medium-3 small-3 columns">
+                    <a class="icon" title="Consulter son profil" href="#"><i class="fi-torso"></i></a>
+                  </div>
+                  <div class="large-3 medium-3 small-3 columns">
+                    <a class="icon" title="Contacter par courriel" href="#"><i class="fi-at-sign"></i></a>
+                  </div>
+                  <div class="large-3 medium-3 small-3 columns">
+                    <a class="icon" title="Permissions accordées" href="#"><i class="fi-lock"></i></a>
+                  </div>
+                  <div class="large-3 medium-3 small-3 columns">
+                    <a class="icon" title="Larguer ce pair" href="#"><i class="fi-unlink"></i></a>
+                  </div>
+                </div>
+              </div>
+              <!-- end nested row -->
+          </div>
+        </div>
+        </form>
+      </div>
+      <hr>
+      <!-- end row-1 -->
+
+      <!-- row-2 -->
+      <div class="row">
+        <form>
+        <div class="large-4 medium-4 small-4 columns">
+          <div class="text-center">
+            <h5>Platon</h5>
+            <a href="#"><img src="img/membres/me.jpg" width="200" height="200" alt="Pair #1"></a>
+              <!-- start nested row -->
+              <div class="row">
+                <div class="large-12 medium-12 small-12 columns">
+                  <div class="large-3 medium-3 small-3 columns">
+                    <a class="icon" title="Consulter son profil" href="#"><i class="fi-torso"></i></a>
+                  </div>
+                  <div class="large-3 medium-3 small-3 columns">
+                    <a class="icon" title="Contacter par courriel" href="#"><i class="fi-at-sign"></i></a>
+                  </div>
+                  <div class="large-3 medium-3 small-3 columns">
+                    <a class="icon" title="Permissions accordées" href="#"><i class="fi-lock"></i></a>
+                  </div>
+                  <div class="large-3 medium-3 small-3 columns">
+                    <a class="icon" title="Larguer ce pair" href="#"><i class="fi-unlink"></i></a>
+                  </div>
+                </div>
+              </div>
+              <!-- end nested row -->
+          </div>
+        </div>
+        <div class="large-4 medium-4 small-4 columns">
+          <div class="text-center">
+            <h5>Karl Marx</h5>
+            <a href="#"><img src="img/membres/me.jpg" width="200" height="200" alt="Pair #2"></a>
+              <!-- start nested row -->
+              <div class="row">
+                <div class="large-12 medium-12 small-12 columns">
+                  <div class="large-3 medium-3 small-3 columns">
+                    <a class="icon" title="Consulter son profil" href="#"><i class="fi-torso"></i></a>
+                  </div>
+                  <div class="large-3 medium-3 small-3 columns">
+                    <a class="icon" title="Contacter par courriel" href="#"><i class="fi-at-sign"></i></a>
+                  </div>
+                  <div class="large-3 medium-3 small-3 columns">
+                    <a class="icon" title="Permissions accordées" href="#"><i class="fi-lock"></i></a>
+                  </div>
+                  <div class="large-3 medium-3 small-3 columns">
+                    <a class="icon" title="Larguer ce pair" href="#"><i class="fi-unlink"></i></a>
+                  </div>
+                </div>
+              </div>
+              <!-- end nested row -->
+          </div>
+        </div>
+        <div class="large-4 medium-4 small-4 columns">
+          <div class="text-center">
+            <h5>Bruno Latour</h5>
+            <a href="#"><img src="img/membres/me.jpg" width="200" height="200" alt="Pair #3"></a>
+              <!-- start nested row -->
+              <div class="row">
+                <div class="large-12 medium-12 small-12 columns">
+                  <div class="large-3 medium-3 small-3 columns">
+                    <a class="icon" title="Consulter son profil" href="#"><i class="fi-torso"></i></a>
+                  </div>
+                  <div class="large-3 medium-3 small-3 columns">
+                    <a class="icon" title="Contacter par courriel" href="#"><i class="fi-at-sign"></i></a>
+                  </div>
+                  <div class="large-3 medium-3 small-3 columns">
+                    <a class="icon" title="Permissions accordées" href="#"><i class="fi-lock"></i></a>
+                  </div>
+                  <div class="large-3 medium-3 small-3 columns">
+                    <a class="icon" title="Larguer ce pair" href="#"><i class="fi-unlink"></i></a>
+                  </div>
+                </div>
+              </div>
+              <!-- end nested row -->
+          </div>
+        </div>
+        </form>
+      </div>
+      <hr>
+      <!-- end row-2 -->
+      <p><a title="Haut de page" href="#"><i class="fi-arrow-up"></i></a></p>
+    </div>
+    </div>
+
+    <div class="tabs-panel" id="groupes">
+    <div class="" id="bloc-10">
+
+      <!-- Groupes -->
+      <div class="content">
+        <h4>Groupes</h4>
+        <ul>
+          <li><a href="bottin#groupes"><em>Liste de tous les groupes</em></a>, pour consulter d'autres groupes, choisir un groupe.<br></li>
+          <li><em>Joindre un groupe</em>, c'est-à-dire m'inviter à devenir un des membres du groupe.<br></li>
+        </ul>
+      </div>
+
+      <div><h4>Mes groupes</h4></div>
+
+      <!-- row-1 -->
+      <div class="row">
+        <form>
+        <div class="large-4 medium-4 small-4 columns">
+          <div class="text-center">
+            <h5>Groupe #1</h5>
+            <a href="#"><img src="img/groupes/groupe-1.jpeg" alt="Groupe #1" width="200" height="200"></a>
+              <!-- start nested row -->
+              <div class="row">
+                <div class="large-12 medium-12 small-12 columns">
+                  <div class="large-3 medium-3 small-3 columns">
+                    <a class="icon" title="Consulter ce groupe" href="#"><i class="fi-torso"></i></a>
+                  </div>
+                  <div class="large-3 medium-3 small-3 columns">
+                    <a class="icon" title="Contacter ce groupe par courriel" href="#"><i class="fi-at-sign"></i></a>
+                  </div>
+                  <div class="large-3 medium-3 small-3 columns">
+                    <a class="icon" title="Permissions accordées" href="#"><i class="fi-lock"></i></a>
+                  </div>
+                  <div class="large-3 medium-3 small-3 columns">
+                    <a class="icon" title="Quitter ce groupe" href="#"><i class="fi-unlink"></i></a>
+                  </div>
+                </div>
+              </div>
+              <!-- end nested row -->
+          </div>
+        </div>
+        <div class="large-4 medium-4 small-4 columns">
+          <div class="text-center">
+            <h5>Groupe #2</h5>
+            <a href="#"><img src="img/groupes/groupe-3.jpeg" alt="Groupe #2" width="200" height="200"></a>
+              <!-- start nested row -->
+              <div class="row">
+                <div class="large-12 medium-12 small-12 columns">
+                  <div class="large-3 medium-3 small-3 columns">
+                    <a class="icon" title="Consulter ce groupe" href="#"><i class="fi-torso"></i></a>
+                  </div>
+                  <div class="large-3 medium-3 small-3 columns">
+                    <a class="icon" title="Contacter ce groupe par courriel" href="#"><i class="fi-at-sign"></i></a>
+                  </div>
+                  <div class="large-3 medium-3 small-3 columns">
+                    <a class="icon" title="Permissions accordées" href="#"><i class="fi-lock"></i></a>
+                  </div>
+                  <div class="large-3 medium-3 small-3 columns">
+                    <a class="icon" title="Quitter ce groupe" href="#"><i class="fi-unlink"></i></a>
+                  </div>
+                </div>
+              </div>
+              <!-- end nested row -->
+          </div>
+        </div>
+        <div class="large-4 medium-4 small-4 columns">
+          <div class="text-center">
+            <h5>Groupe #3</h5>
+            <a href="#"><img src="img/groupes/groupe-2.jpeg" width="200" height="200" alt="Groupe #3"></a>
+              <!-- start nested row -->
+              <div class="row">
+                <div class="large-12 medium-12 small-12 columns">
+                  <div class="large-3 medium-3 small-3 columns">
+                    <a class="icon" title="Consulter ce groupe" href="#"><i class="fi-torso"></i></a>
+                  </div>
+                  <div class="large-3 medium-3 small-3 columns">
+                    <a class="icon" title="Contacter ce groupe par courriel" href="#"><i class="fi-at-sign"></i></a>
+                  </div>
+                  <div class="large-3 medium-3 small-3 columns">
+                    <a class="icon" title="Permissions accordées" href="#"><i class="fi-lock"></i></a>
+                  </div>
+                  <div class="large-3 medium-3 small-3 columns">
+                    <a class="icon" title="Quitter ce groupe" href="#"><i class="fi-unlink"></i></a>
+                  </div>
+                </div>
+              </div>
+              <!-- end nested row -->
+          </div>
+        </div>
+        </form>
+      </div>
+
+      <!-- row-2 -->
+      <hr>
+      <div class="row">
+        <form>
+        <div class="large-4 medium-4 small-4 columns">
+          <div class="text-center">
+            <h5>Groupe #4</h5>
+            <a href="#"><img src="img/groupes/groupe-1.jpeg" alt="Groupe #1" width="200" height="200"></a>
+              <!-- start nested row -->
+              <div class="row">
+                <div class="large-12 medium-12 small-12 columns">
+                  <div class="large-3 medium-3 small-3 columns">
+                    <a class="icon" title="Consulter ce groupe" href="#"><i class="fi-torso"></i></a>
+                  </div>
+                  <div class="large-3 medium-3 small-3 columns">
+                    <a class="icon" title="Contacter ce groupe par courriel" href="#"><i class="fi-at-sign"></i></a>
+                  </div>
+                  <div class="large-3 medium-3 small-3 columns">
+                    <a class="icon" title="Permissions accordées" href="#"><i class="fi-lock"></i></a>
+                  </div>
+                  <div class="large-3 medium-3 small-3 columns">
+                    <a class="icon" title="Quitter ce groupe" href="#"><i class="fi-unlink"></i></a>
+                  </div>
+                </div>
+              </div>
+              <!-- end nested row -->
+          </div>
+        </div>
+        <div class="large-4 medium-4 small-4 columns">
+          <div class="text-center">
+            <h5>Groupe #5</h5>
+            <a href="#"><img src="img/groupes/groupe-1.jpeg" alt="Groupe #2" width="200" height="200"></a>
+              <!-- start nested row -->
+              <div class="row">
+                <div class="large-12 medium-12 small-12 columns">
+                  <div class="large-3 medium-3 small-3 columns">
+                    <a class="icon" title="Consulter ce groupe" href="#"><i class="fi-torso"></i></a>
+                  </div>
+                  <div class="large-3 medium-3 small-3 columns">
+                    <a class="icon" title="Contacter ce groupe par courriel" href="#"><i class="fi-at-sign"></i></a>
+                  </div>
+                  <div class="large-3 medium-3 small-3 columns">
+                    <a class="icon" title="Permissions accordées" href="#"><i class="fi-lock"></i></a>
+                  </div>
+                  <div class="large-3 medium-3 small-3 columns">
+                    <a class="icon" title="Quitter ce groupe" href="#"><i class="fi-unlink"></i></a>
+                  </div>
+                </div>
+              </div>
+              <!-- end nested row -->
+          </div>
+        </div>
+        <div class="large-4 medium-4 small-4 columns">
+          <div class="text-center">
+            <h5>Groupe #6</h5>
+            <a href="#"><img src="img/groupes/groupe-1.jpeg" width="200" height="200" alt="Groupe #3"></a>
+              <!-- start nested row -->
+              <div class="row">
+                <div class="large-12 medium-12 small-12 columns">
+                  <div class="large-3 medium-3 small-3 columns">
+                    <a class="icon" title="Consulter ce groupe" href="#"><i class="fi-torso"></i></a>
+                  </div>
+                  <div class="large-3 medium-3 small-3 columns">
+                    <a class="icon" title="Contacter ce groupe par courriel" href="#"><i class="fi-at-sign"></i></a>
+                  </div>
+                  <div class="large-3 medium-3 small-3 columns">
+                    <a class="icon" title="Permissions accordées" href="#"><i class="fi-lock"></i></a>
+                  </div>
+                  <div class="large-3 medium-3 small-3 columns">
+                    <a class="icon" title="Quitter ce groupe" href="#"><i class="fi-unlink"></i></a>
+                  </div>
+                </div>
+              </div>
+              <!-- end nested row -->
+          </div>
+        </div>
+        </form>
+      </div>
+      <hr>
+      <p><a title="Haut de page" href="#"><i class="fi-arrow-up"></i></a></p>
+      <!-- end row-2 -->
+      <br>
+    </div>
+    </div>
+
+    <div class="tabs-panel" id="mon-agenda">
+    <div class="" id="bloc-11">
+      <div><h4>Agenda</h4></div>
+      <div class="float-right">
+        <img src="img/placeholders/agenda.jpg" width="400">
+      </div>
+      <div><h5>Légende</h5></div>
+      <div class="content">
+        <p>
+        <span title="U" class="success badge">U</span> Activités ajoutées par l'<strong>utilisateur</strong>.<br>
+        <span title="G" class="warning badge">G</span> Activités héritées de ses <strong>groupes</strong>.<br>
+        <span title="S" class="alert badge">S</span> Activités ajoutées par le <strong>système</strong>.<br>
+        <span title="Ajouter une catégorie" class="badge">+</span> <a href="#">Ajouter une catégorie</a><br>
+        </p>
+      </div>
+      <div><h5>Fonctions</h5></div>
+      <div class="content">
+        <ul>
+          <li>Afficher liste(s) des activités et des tâches.<br></li>
+          <li>Filtrer liste(s) des activités et des tâches.<br></li>
+          <li>Consulter une de mes activités/tâches.<br></li>
+          <li>Commuter (fait/pas-fait) d'une activité/tâche.<br></li>
+          <li>Retirer une de mes activités/tâches.<br></li>
+          <li>Ajouter une activité/tâche.<br></li>
+        </ul>
+      </div>
+      <p>PS: peut-être utiliser une interface de type <em>Accordéon</em></p>
+      <p><a title="Haut de page" href="#"><i class="fi-arrow-up"></i></a></p>
+    </div>
+    </div>
+
+    <div class="tabs-panel" id="mon-calendrier">
+    <div class="" id="bloc-12">
+      <div><h4>Calendrier</h4></div>
+      <div class="content">
+        <p>
+        <span title="U" class="badge">U</span> Activités ajoutées délibéramment par l'<strong>utilisateur</strong>.<br>
+        <span title="G" class="warning badge">G</span> Activités héritées des <strong>groupes</strong> dans lesquels participe l'utilisateur.<br>
+        <span title="S" class="alert badge">S</span> Activités ajoutées automatiquement par le <strong>système</strong>.<br>
+        </p>
+        <img src="img/placeholders/calendrier.png" alt="Agenda" style="height: 80%;">
+      </div>
+      <p><a title="Haut de page" href="#"><i class="fi-arrow-up"></i></a></p>
+    </div>
+    </div>
+
+    <div class="tabs-panel" id="meteos">
+    <div class="" id="bloc-7">
+      <div><h4>Météos</h4></div>
+      <div class="row">
+        <form>
+        <div class="large-4 medium-4 small-4 columns">
+          <div class="text-center">
+            <h5>Montréal (Québec)</h5>
+            <a href="meteo-1"><img src="img/placeholders/meteo.png" alt="Météo du lieu #1"></a>
+          </div>
+        </div>
+        <div class="large-4 medium-4 small-4 columns">
+          <div class="text-center">
+            <h5>Québec (Québec)</h5>
+            <a href="meteo-2"><img src="img/placeholders/meteo.png" alt="Météo du lieu #2"></a>
+          </div>
+        </div>
+        <div class="large-4 medium-4 small-4 columns">
+          <div class="text-center">
+            <h5>Paris (France)</h5>
+            <a href="meteo-3"><img src="img/placeholders/meteo.png" alt="Météo du lieu #3"></a>
+          </div>
+        </div>
+        </form>
+      </div>
+      <div class="content">
+        <br><p>&nbsp;</p>
+      </div>
+    </div>
+    </div>
+
+    </div>
+    </div>
+  </div>
+
+</div>
+
+<!--  FOOTER -->
+<br>
+<div class="row" id="footer">
+  <div class="large-6 medium-6 small-6 columns">
+    <div class="" id="copyright">
+      <p class="text-left">© 2016 - Machina Mundi Multimedia Inc.</p>
+    </div>
+  </div>
+  <div class="large-6 medium-6 small-6 columns">
+    <div class="" id="mise-a-jour">
+      <p class="text-right">Dernière mise à jour: 2016-10-29 à 16:38.</p>
+    </div>
+  </div>
+</div>
+
+<!--  SCRIPTS -->
+<script src="js/vendor/jquery.js"></script>
+<script src="js/vendor/what-input.js"></script>
+<script src="js/vendor/foundation.min.js"></script>
+<script>
+  $(document).foundation();
+</script>
+
+</body>
+</html>
