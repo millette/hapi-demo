@@ -24,6 +24,15 @@ const manifest = {
     labels: ['web']
   }],
   registrations: [
+    {
+      plugin: {
+        register: 'hapi-i18n',
+        options: {
+          locales: ['fr', 'en'],
+          directory: 'locales'
+        }
+      }
+    },
     { plugin: 'inert' },
     { plugin: 'vision' },
     {

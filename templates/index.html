@@ -12,8 +12,7 @@
 Les données sont toutes accessibles dans l'object <code>data</code>.
 On utilise ensuite le langage JavaScript pour faire des boucles. Par exemple:
 </p>
-
-<h2>Liste #1</h2>
+<h2><%- data.__('Liste %s', '#1') %></h2>
 <pre><code>&lt;ol&gt;
   &lt;% <strong>data.items.forEach((item) =&gt; {</strong> %&gt;
   &lt;li&gt;&lt;%- item %&gt;&lt;/li&gt;
@@ -27,7 +26,7 @@ On utilise ensuite le langage JavaScript pour faire des boucles. Par exemple:
   <% }) %>
 </ol>
 
-<h2>Liste #2</h2>
+<h2><%- data.__('Liste %s', '#2') %></h2>
 <p>On peut aussi utiliser les fonctions lodash directement:</p>
 <pre><code>&lt;ol&gt;
   &lt;% <strong>_(data.items2).each((item) =&gt; {</strong> %&gt;
@@ -41,7 +40,7 @@ On utilise ensuite le langage JavaScript pour faire des boucles. Par exemple:
   <% }) %>
 </ol>
 <h2>Suite</h2>
-<p>La suite, à propos des <a href="/partials">bouts de <i>temlates</i> (<i>partials</i>)</a>.</p>
+<p>La suite, à propos des <a href="partials">bouts de <i>temlates</i> (<i>partials</i>)</a>.</p>
 </div>
 <script src="/js/vendor/jquery.js"></script>
 <script src="/js/vendor/what-input.js"></script>

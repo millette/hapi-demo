@@ -19,6 +19,7 @@
     "confidence": "3.x.x",
     "glue": "4.x.x",
     "hapi": "15.x.x",
+    "hapi-i18n": "^1.0.3",
     "hoek": "4.x.x",
     "inert": "^4.0.2",
     "lodash": "^4.16.6",

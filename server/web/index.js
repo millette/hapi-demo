@@ -36,25 +36,41 @@ exports.register = function (server, options, next) {
   pages.forEach((page) => {
     server.route({
       method: 'GET',
-      path: '/' + page,
+      path: '/{languageCode}/' + page,
       handler: { view: page }
     })
   })
 
   server.route({
     method: 'GET',
-    path: '/',
+    path: '/{languageCode}/',
+    handler: function (request, reply) {
+      const data = {
+        __: request.i18n.__,
+        items: list1.items,
+        items2: list2.items
+      }
+      reply.view('index', data)
+    }
+    /*
     handler: {
       view: {
         template: 'index',
         context: { items: list1.items, items2: list2.items }
       }
     }
+    */
   })
 
   server.route({
     method: 'GET',
-    path: '/partials',
+    path: '/',
+    handler: { view: 'pick-language' }
+  })
+
+  server.route({
+    method: 'GET',
+    path: '/{languageCode}/partials',
     handler: { view: 'partials' }
   })
 
@@ -81,5 +97,5 @@ exports.register = function (server, options, next) {
 
 exports.register.attributes = {
   name: 'web',
-  dependencies: ['vision', 'inert']
+  dependencies: ['hapi-i18n', 'vision', 'inert']
 }
