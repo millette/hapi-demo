@@ -1,7 +1,6 @@
 'use strict'
 
 exports.register = function (server, options, next) {
-  console.log('OPTIONS:', options)
   server.views({
     engines: { html: require('lodash-vision') },
     path: 'templates',

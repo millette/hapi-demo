@@ -21,7 +21,7 @@ lab.beforeEach((done) => {
     }
 
     server.views({
-      engines: { jade: require('jade') },
+      engines: { html: require('lodash-vision') },
       path: './server/web'
     })
 
