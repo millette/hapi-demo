@@ -42,8 +42,6 @@ lab.experiment('Home Page View', () => {
 
   lab.test('home page renders properly', (done) => {
     server.inject(request, (response) => {
-      console.log('WEB:', JSON.stringify(response.result, null, ' '))
-      // console.log(Object.keys(response.result))
       Code.expect(response.result).to.match(/activate the plot device/i)
       Code.expect(response.statusCode).to.equal(200)
 

@@ -35,7 +35,6 @@ lab.experiment('Index Plugin', () => {
 
   lab.test('it returns the default message', (done) => {
     server.inject(request, (response) => {
-      console.log('API:', JSON.stringify(response.result, null, ' '))
       Code.expect(response.result.message).to.match(/welcome to the plot device/i)
       Code.expect(response.statusCode).to.equal(200)
 

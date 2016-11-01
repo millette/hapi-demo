@@ -54,6 +54,12 @@ exports.register = function (server, options, next) {
 
   server.route({
     method: 'GET',
+    path: '/partials',
+    handler: { view: 'partials' }
+  })
+
+  server.route({
+    method: 'GET',
     path: '/css/{param*}',
     handler: { directory: { path: 'assets/css/' } }
   })
