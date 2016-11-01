@@ -25,6 +25,9 @@ const manifest = {
   }],
   registrations: [
     {
+      plugin: 'inert'
+    },
+    {
       plugin: 'vision'
     },
     {

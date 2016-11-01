@@ -3,7 +3,7 @@
 exports.register = function (server, options, next) {
   server.route({
     method: 'GET',
-    path: '/',
+    path: '/boo',
     handler: function (request, reply) {
       reply({ message: 'Welcome to the plot device.' })
     }
