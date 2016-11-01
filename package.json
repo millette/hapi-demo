@@ -1,0 +1,30 @@
+{
+  "name": "hapi-demo",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "test": "standard && lab -c",
+    "lint": "standard"
+  },
+  "author": "Robin Millette <robin@millette.info>",
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "dependencies": {
+    "confidence": "3.x.x",
+    "glue": "4.x.x",
+    "hapi": "15.x.x",
+    "hoek": "4.x.x",
+    "lodash-vision": "^0.0.1",
+    "vision": "4.x.x"
+  },
+  "devDependencies": {
+    "code": "3.x.x",
+    "eslint": "^3.9.1",
+    "lab": "11.x.x",
+    "nodemon": "1.x.x",
+    "standard": "^8.5.0"
+  }
+}
