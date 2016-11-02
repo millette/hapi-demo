@@ -1,7 +1,7 @@
 {
   "name": "hapi-demo",
   "version": "0.0.0",
-  "description": "",
+  "description": "Hapi demonstration",
   "main": "index.js",
   "scripts": {
     "start": "NODE_ENV=prod && node server.js",
@@ -11,7 +11,12 @@
     "lintall": "standard && npm run jsonlint",
     "lint": "standard"
   },
-  "author": "Robin Millette <robin@millette.info>",
+  "repository": "millette/hapi-demo",
+  "author": {
+    "name": "Robin Millette",
+    "email": "robin@millette.info",
+    "url": "http://robin.millette.info"
+  },
   "engines": {
     "node": ">=4.0.0"
   },
