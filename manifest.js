@@ -29,6 +29,11 @@ const manifest = {
         register: 'hapi-i18n',
         options: {
           locales: ['fr', 'en'],
+          defaultLocale: 'fr',
+          autoReload: Config.get('/i18n/autoReload'),
+          updateFiles: Config.get('/i18n/updateFiles'),
+          syncFiles: true,
+          indent: "  ",
           directory: 'locales'
         }
       }
