@@ -1,3 +1,4 @@
 {
-  "ignore": ["locales/*", "templates/*.html"]
+  "ignore": ["locales/*", "templates/*.html"],
+  "ext": "js,json,html"
 }

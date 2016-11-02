@@ -10,5 +10,7 @@
   "%s livre": {
     "one": "%s book",
     "other": "%s books"
-  }
+  },
+  "en": "fr",
+  "Switch to English": "En français svp"
 }
