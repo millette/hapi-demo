@@ -9,7 +9,7 @@ npm install
 
 Start it:
 ```
-npm dev
+npm run dev
 ```
 
 Launch the browser:
