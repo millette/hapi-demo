@@ -29,6 +29,9 @@ dans le fureteur. Il suffit de trouver les nouvelles chaines dans le fichier
 si on utilise une chaine variable. Par exemple:</p>
 <p><%- data.__n('%s cheval', '%s chevaux', 3) %></p>
 <p><%- data.__n('%s livre', '%s livres', 1) %></p>
+<p>S'écrit ainsi:</p>
+<pre><code><%- `<p>\<\%- data.__n('%s cheval', '%s chevaux', 3) \%\></p>
+<p>\<\%- data.__n('%s livre', '%s livres', 1) \%\></p>` %></code></pre>
 <h2>Suite</h2>
 <p>La suite, à propos des <a href="abc">abc...</a>.</p>
 </div>
