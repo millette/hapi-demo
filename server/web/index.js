@@ -36,6 +36,12 @@ exports.register = function (server, options, next) {
 
   server.route({
     method: 'GET',
+    path: '/{languageCode}/multilingual',
+    handler: { view: 'multilingual' }
+  })
+
+  server.route({
+    method: 'GET',
     path: '/css/{param*}',
     handler: { directory: { path: 'assets/css/' } }
   })

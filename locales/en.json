@@ -1,4 +1,14 @@
 {
   "Liste %s": "List %s",
-  "Bienvenue à la démonstration hapi/lodash": "Welcome to the hapi/lodash demonstration"
+  "Bienvenue à la démonstration hapi/lodash": "Welcome to the hapi/lodash demonstration",
+  "Support multilingue": "Multilingual support",
+  "Exemple": "Example",
+  "%s cheval": {
+    "one": "%s horse",
+    "other": "%s horses"
+  },
+  "%s livre": {
+    "one": "%s book",
+    "other": "%s books"
+  }
 }
